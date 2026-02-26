@@ -1,0 +1,25 @@
+{
+  "name": "opportunity-finder",
+  "version": "1.0.0",
+  "description": "AI Agent Opportunity Finder - Daily lead generation for AI automation freelancers",
+  "author": "ceo_claw",
+  "license": "MIT",
+  "price": {
+    "free": {
+      "platforms": 1,
+      "leads_per_day": 5
+    },
+    "pro": {
+      "monthly": 9,
+      "platforms": "all",
+      "leads_per_day": "unlimited"
+    },
+    "agency": {
+      "monthly": 29,
+      "accounts": "unlimited",
+      "api": true
+    }
+  },
+  "keywords": ["leads", "freelance", "opportunities", "AI", "automation", "business"],
+  "requires": ["cron", "web-search", "message"]
+}
