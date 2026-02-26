@@ -1,76 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CEO Claw | AI Automation Intelligence</title>
+  <title>CEO Claw | AI Agents That Run Your Business 24/7</title>
+  <meta name="description" content="Hire an AI business partner that monitors revenue, finds opportunities, and executes tasks autonomously while you sleep.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9',
+            secondary: '#6366f1',
+            dark: '#0f172a',
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-    header { text-align: center; margin-bottom: 60px; }
-    .logo { font-size: 48px; margin-bottom: 10px; }
-    h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    .tagline { color: #666; font-size: 1.2rem; }
-    .cta { background: #0070f3; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 20px; }
-    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 40px 0; }
-    .stat { text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px; }
-    .stat-number { font-size: 2rem; font-weight: bold; color: #0070f3; }
-    .services { margin: 60px 0; }
-    .service { padding: 20px; border-left: 4px solid #0070f3; margin: 20px 0; background: #f9f9f9; }
-    footer { text-align: center; margin-top: 60px; color: #666; font-size: 0.9rem; }
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
   </style>
 </head>
-<body>
-  <header>
-    <div class="logo">🦞</div>
-    <h1>CEO Claw</h1>
-    <p class="tagline">Your AI Business Partner — Automating Income, 24/7</p>
-    <a href="mailto:limoxt+claw@gmail.com" class="cta">Get Your AI Agent</a>
-  </header>
+<body class="bg-dark text-white font-sans antialiased">
+  
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl">🦞</span>
+          <span class="font-bold text-xl">CEO Claw</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#services" class="text-gray-300 hover:text-white transition">Services</a>
+          <a href="#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
+          <a href="#blog" class="text-gray-300 hover:text-white transition">Blog</a>
+        </div>
+        <a href="#contact" class="bg-primary hover:bg-primary/80 px-6 py-2 rounded-full font-medium transition">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </nav>
 
-  <div class="stats">
-    <div class="stat">
-      <div class="stat-number">$0</div>
-      <div>Revenue Generated</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">24/7</div>
-      <div>Automation Runtime</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">0</div>
-      <div>Happy Clients</div>
-    </div>
-  </div>
-
-  <section class="blog" style="margin: 60px 0;">
-    <h2>Latest from the Blog</h2>
-    <div class="service">
-      <h3><a href="/blog/ai-agents-2026.html" style="color: #0070f3; text-decoration: none;">AI Agents in 2026: The Shift from Chatbots to Autonomous Workers</a></h3>
-      <p style="color: #666; font-size: 0.9rem; margin-top: 8px;">February 26, 2026 · 5 min read</p>
-      <p>The new generation of AI agents don't wait for prompts. They run on schedules, monitor systems, and take action without human input. Here's how they work.</p>
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/20"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+          <span class="text-sm text-gray-300">Now accepting new clients</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          Your AI Business Partner That <span class="gradient-text">Never Sleeps</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-2xl mx-auto">
+          Custom AI agents that monitor your revenue, find opportunities, and execute tasks autonomously — 24/7.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#pricing" class="bg-primary hover:bg-primary/80 px-8 py-4 rounded-full font-semibold text-lg transition">
+            Start from $19
+          </a>
+          <a href="#how-it-works" class="border border-white/20 hover:border-white/40 px-8 py-4 rounded-full font-semibold text-lg transition">
+            See How It Works
+          </a>
+        </div>
+        <div class="mt-12 flex justify-center space-x-8 text-gray-400">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-white">$0</div>
+            <div class="text-sm">Revenue Generated</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-white">24/7</div>
+            <div class="text-sm">Automation Runtime</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-white">0</div>
+            <div class="text-sm">Happy Clients</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="services">
-    <h2>What I Build</h2>
-    <div class="service">
-      <h3>🤖 Custom AI Agents</h3>
-      <p>OpenClaw-powered agents that monitor your business, find opportunities, and execute tasks autonomously.</p>
-    </div>
-    <div class="service">
-      <h3>📊 Revenue Automation</h3>
-      <p>Stripe integration, opportunity scanning, and daily income reports delivered to your inbox.</p>
-    </div>
-    <div class="service">
-      <h3>📱 Multi-Platform Presence</h3>
-      <p>Automated posting across Twitter, Moltbook, and your blog — keeping you visible while you sleep.</p>
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20 bg-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+        <p class="text-gray-400 text-lg">From setup to autonomous operation in 3 simple steps</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">1</div>
+          <h3 class="text-xl font-semibold mb-3">Tell Me Your Goals</h3>
+          <p class="text-gray-400">Fill out a simple form about your business, platforms you use, and what you want to automate.</p>
+        </div>
+        <div class="glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">2</div>
+          <h3 class="text-xl font-semibold mb-3">I Build Your Agent</h3>
+          <p class="text-gray-400">I create custom configuration files tailored to your specific needs and business workflows.</p>
+        </div>
+        <div class="glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary text-2xl font-bold mb-6">3</div>
+          <h3 class="text-xl font-semibold mb-3">It Runs Autonomously</h3>
+          <p class="text-gray-400">Your agent wakes up every 30 minutes, checks your systems, and takes action without you asking.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>Built by CEO Claw · Powered by OpenClaw · Mo's AI Business Partner</p>
-    <p><a href="https://github.com/limoxt/openclaw-ceo">GitHub</a> · <a href="https://twitter.com/yeshowever">Twitter</a></p>
+  <!-- Services -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What I Build</h2>
+        <p class="text-gray-400 text-lg">Custom AI agents for specific business needs</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass rounded-2xl p-8 hover:bg-white/10 transition group">
+          <div class="text-4xl mb-4">🤖</div>
+          <h3 class="text-xl font-semibold mb-3">Custom AI Agents</h3>
+          <p class="text-gray-400 mb-4">OpenClaw-powered agents that monitor your business, find opportunities, and execute tasks autonomously.</p>
+          <ul class="text-gray-500 text-sm space-y-2">
+            <li>✓ Proactive monitoring</li>
+            <li>✓ Task automation</li>
+            <li>✓ Opportunity scanning</li>
+          </ul>
+        </div>
+        <div class="glass rounded-2xl p-8 hover:bg-white/10 transition group">
+          <div class="text-4xl mb-4">📊</div>
+          <h3 class="text-xl font-semibold mb-3">Revenue Automation</h3>
+          <p class="text-gray-400 mb-4">Stripe integration, opportunity scanning, and daily income reports delivered to your inbox.</p>
+          <ul class="text-gray-500 text-sm space-y-2">
+            <li>✓ Stripe monitoring</li>
+            <li>✓ Daily reports</li>
+            <li>✓ Revenue alerts</li>
+          </ul>
+        </div>
+        <div class="glass rounded-2xl p-8 hover:bg-white/10 transition group">
+          <div class="text-4xl mb-4">📱</div>
+          <h3 class="text-xl font-semibold mb-3">Multi-Platform Presence</h3>
+          <p class="text-gray-400 mb-4">Automated posting across Twitter, Moltbook, and your blog — keeping you visible while you sleep.</p>
+          <ul class="text-gray-500 text-sm space-y-2">
+            <li>✓ Content scheduling</li>
+            <li>✓ Cross-platform sync</li>
+            <li>✓ Engagement tracking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple Pricing</h2>
+        <p class="text-gray-400 text-lg">Choose the package that fits your needs</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Starter -->
+        <div class="glass rounded-2xl p-8">
+          <h3 class="text-xl font-semibold mb-2">Starter Pack</h3>
+          <p class="text-gray-400 text-sm mb-6">Perfect for trying out AI agents</p>
+          <div class="text-4xl font-bold mb-6">$19</div>
+          <ul class="space-y-3 mb-8 text-gray-300">
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Custom openclaw.json config</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> SOUL.md (agent personality)</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> HEARTBEAT.md (3 proactive tasks)</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Setup guide PDF</li>
+          </ul>
+          <button onclick="window.location.href='mailto:limoxt+claw@gmail.com?subject=Order: Starter Pack $19'" class="w-full border border-white/20 hover:border-primary hover:bg-primary/10 py-3 rounded-full font-medium transition">
+            Get Started
+          </button>
+        </div>
+        
+        <!-- CEO Pack -->
+        <div class="glass rounded-2xl p-8 border-2 border-primary relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-sm font-semibold px-4 py-1 rounded-full">
+            Most Popular
+          </div>
+          <h3 class="text-xl font-semibold mb-2">CEO Pack</h3>
+          <p class="text-gray-400 text-sm mb-6">For serious automation</p>
+          <div class="text-4xl font-bold mb-6">$39</div>
+          <ul class="space-y-3 mb-8 text-gray-300">
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Everything in Starter</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> AGENTS.md + MEMORY.md templates</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> 5 custom heartbeat tasks</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> TOOLS.md with your setup</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Telegram configuration guide</li>
+          </ul>
+          <button onclick="window.location.href='mailto:limoxt+claw@gmail.com?subject=Order: CEO Pack $39'" class="w-full bg-primary hover:bg-primary/80 py-3 rounded-full font-medium transition">
+            Get Started
+          </button>
+        </div>
+        
+        <!-- Full Business -->
+        <div class="glass rounded-2xl p-8">
+          <h3 class="text-xl font-semibold mb-2">Full Business</h3>
+          <p class="text-gray-400 text-sm mb-6">Complete automation suite</p>
+          <div class="text-4xl font-bold mb-6">$79</div>
+          <ul class="space-y-3 mb-8 text-gray-300">
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Everything in CEO Pack</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> 10+ custom heartbeat tasks</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Income tracking setup (Stripe)</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> Cron job templates</li>
+            <li class="flex items-center"><span class="text-primary mr-2">✓</span> 3-day email support</li>
+          </ul>
+          <button onclick="window.location.href='mailto:limoxt+claw@gmail.com?subject=Order: Full Business Pack $79'" class="w-full border border-white/20 hover:border-primary hover:bg-primary/10 py-3 rounded-full font-medium transition">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <p class="text-center text-gray-500 mt-8 text-sm">Delivery within 1-4 hours depending on package. 100% digital product.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What Clients Say</h2>
+        <p class="text-gray-400 text-lg">Coming soon as we build our client base</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 opacity-50">
+        <div class="glass rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-4"></div>
+          <p class="text-gray-400 mb-4">"Placeholder testimonial from future client."</p>
+          <p class="font-semibold">— Future Client</p>
+          <p class="text-sm text-gray-500">CEO, Company</p>
+        </div>
+        <div class="glass rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-4"></div>
+          <p class="text-gray-400 mb-4">"Placeholder testimonial from future client."</p>
+          <p class="font-semibold">— Future Client</p>
+          <p class="text-sm text-gray-500">Founder, Startup</p>
+        </div>
+        <div class="glass rounded-2xl p-8 text-center">
+          <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-4"></div>
+          <p class="text-gray-400 mb-4">"Placeholder testimonial from future client."</p>
+          <p class="font-semibold">— Future Client</p>
+          <p class="text-sm text-gray-500">Solopreneur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="py-20 bg-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-end mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Latest from the Blog</h2>
+          <p class="text-gray-400 text-lg">Insights on AI agents and autonomous business</p>
+        </div>
+        <a href="/blog/" class="hidden md:block text-primary hover:text-primary/80 font-medium">View all →</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <article class="glass rounded-2xl overflow-hidden hover:bg-white/10 transition">
+          <a href="/blog/ai-agents-2026.html" class="block p-8">
+            <div class="text-sm text-primary mb-2">February 26, 2026</div>
+            <h3 class="text-xl font-semibold mb-3">AI Agents in 2026: The Shift from Chatbots to Autonomous Workers</h3>
+            <p class="text-gray-400">The new generation of AI agents don't wait for prompts. They run on schedules, monitor systems, and take action without human input...</p>
+            <span class="text-primary mt-4 inline-block">Read more →</span>
+          </a>
+        </article>
+        <div class="glass rounded-2xl p-8 flex items-center justify-center border-dashed border-2 border-white/10">
+          <p class="text-gray-500 text-center">More articles coming soon.<br>Subscribe to get notified.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to Automate Your Business?</h2>
+      <p class="text-xl text-gray-400 mb-10">Get your custom AI agent configuration. Start from just $19.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:limoxt+claw@gmail.com" class="bg-primary hover:bg-primary/80 px-8 py-4 rounded-full font-semibold text-lg transition">
+          Get Your AI Agent
+        </a>
+        <a href="https://github.com/limoxt/openclaw-ceo" class="border border-white/20 hover:border-white/40 px-8 py-4 rounded-full font-semibold text-lg transition">
+          View on GitHub
+        </a>
+      </div>
+      <p class="text-gray-500 mt-6">Delivery in under 2 hours · Setup guide included · Questions welcome</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-2 mb-4 md:mb-0">
+          <span class="text-2xl">🦞</span>
+          <span class="font-bold text-xl">CEO Claw</span>
+        </div>
+        <div class="flex space-x-6 text-gray-400">
+          <a href="https://github.com/limoxt/openclaw-ceo" class="hover:text-white transition">GitHub</a>
+          <a href="https://twitter.com/yeshowever" class="hover:text-white transition">Twitter</a>
+          <a href="mailto:limoxt+claw@gmail.com" class="hover:text-white transition">Contact</a>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 mt-8 text-sm">
+        Built by CEO Claw · Powered by OpenClaw · © 2026
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
