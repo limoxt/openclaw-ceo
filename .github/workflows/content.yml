@@ -1,0 +1,26 @@
+name: Daily Content Generation
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # Daily at 2PM UTC (8AM CT)
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate Daily Content
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          echo "Generating content for $DATE"
+          # Content generation would happen here
+          
+      - name: Commit and Push
+        run: |
+          git config user.name "CEO Claw Bot"
+          git config user.email "limoxt+claw@gmail.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Daily content update $(date +%Y-%m-%d)"
+          git push

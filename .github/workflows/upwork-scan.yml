@@ -1,0 +1,24 @@
+name: Upwork Opportunity Scanner
+
+on:
+  schedule:
+    - cron: '0 9,15,21 * * *'  # 3x daily (9AM, 3PM, 9PM CT)
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Scan for AI Agent Opportunities
+        run: |
+          echo "Scanning Upwork for AI agent projects..."
+          echo "Keywords: AI agent, automation, Claude, OpenClaw"
+          echo "Budget: $500+"
+          # Would integrate with Upwork API here
+          
+      - name: Report to Telegram
+        run: |
+          echo "Sending opportunities to Telegram..."
+          # Would send notification with high-value leads

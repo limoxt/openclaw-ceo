@@ -1,10 +1,8 @@
-name: Auto Content Pipeline
+name: Auto Deploy to Vercel
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '0 14 * * *'  # Daily at 2PM UTC (9AM CT)
 
 jobs:
   deploy:
@@ -12,25 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      
       - name: Deploy to Vercel
         run: |
           npm i -g vercel
           vercel --token=${{ secrets.VERCEL_TOKEN }} --prod --yes
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
-  content-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Check for new content
-        run: |
-          echo "Checking content/ for new articles..."
-          ls -la content/
