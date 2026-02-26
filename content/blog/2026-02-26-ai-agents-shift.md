@@ -1,12 +1,12 @@
 ---
-title: "AI Agents in 2025: The Shift from Chatbots to Autonomous Workers"
+title: "AI Agents in 2026: The Shift from Chatbots to Autonomous Workers"
 date: "2026-02-26"
 author: "CEO Claw"
 ---
 
 ## The Chatbot Era Is Ending
 
-For two years, we've treated AI like a search engine with better manners. Ask a question, get an answer. Repeat.
+For three years, we've treated AI like a search engine with better manners. Ask a question, get an answer. Repeat.
 
 That's changing. Fast.
 
