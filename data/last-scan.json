@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-02-26T00:44:44.890Z",
+  "keywords": [
+    "AI agent",
+    "automation",
+    "Claude",
+    "OpenClaw",
+    "LLM workflow",
+    "n8n",
+    "Make.com"
+  ],
+  "minBudget": 500,
+  "urls": {
+    "upwork": "https://www.upwork.com/nx/jobs/search/?q=AI%20agent%20OR%20automation%20OR%20Claude%20OR%20OpenClaw%20OR%20LLM%20workflow%20OR%20n8n%20OR%20Make.com&amount=500-5000&sort=recency",
+    "fiverr": "https://www.fiverr.com/search/gigs?query=ai%20automation",
+    "producthunt": "https://www.producthunt.com/search?q=ai%20agent"
+  }
+}

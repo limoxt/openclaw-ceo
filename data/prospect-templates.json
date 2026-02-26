@@ -1,0 +1,22 @@
+[
+  {
+    "id": "template-1",
+    "platform": "upwork",
+    "title": "AI Agent for Customer Support Automation",
+    "budget": "$1,000-$2,500",
+    "description": "Looking for developer to build AI agent that handles L1 support tickets...",
+    "keywords": ["AI agent", "customer support", "automation"],
+    "match_score": 95,
+    "proposal_draft": "I specialize in building autonomous AI agents using OpenClaw and Claude. I can create a system that reads tickets, drafts responses, and escalates complex issues. Recent project: Built similar agent handling 200+ tickets/day with 87% resolution rate."
+  },
+  {
+    "id": "template-2",
+    "platform": "upwork", 
+    "title": "Automate My Business Workflows with AI",
+    "budget": "$500-$1,500",
+    "description": "Need help setting up AI automation for email processing, calendar management, and daily reporting...",
+    "keywords": ["automation", "AI", "workflow"],
+    "match_score": 90,
+    "proposal_draft": "I build custom AI business agents that run 24/7. My OpenClaw-based systems handle email triage, calendar optimization, and proactive opportunity scanning. I can have your core workflows automated within 48 hours."
+  }
+]
